@@ -23,3 +23,21 @@ output "dynamodb_table_arn" {
   description = "The ARN of the DynamoDB table"
 }
 
+output "aws_instance_ami" {
+  value       = aws_instance.app_server.ami
+  description = "The ami of the ec2 instance"
+}
+
+output "aws_instance_type" {
+  value       = aws_instance.app_server.instance_type
+  description = "The instance_type of ec2 instance"
+}
+
+output "aws_instance_public_ip" {
+  value       = aws_instance.app_server.public_ip
+  description = "The public IP of ec2 instance"
+}
+
+
+
+
